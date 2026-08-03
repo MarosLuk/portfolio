@@ -92,10 +92,6 @@ const I18N = {
       acrea: 'AI pipeline generating Slovak building documentation across 10 engineering professions, integrated with ArchiCAD.',
       ea: 'Personal AI chief-of-staff — Telegram, iMessage, mail, calendar, research and real-world bookings.',
       aiagents: 'GDPR-safe AI agent packs for small businesses, running locally at the customer. First pack: CFO in a box.',
-      travel: 'Plan trips on the web, use them on the road. Next.js + Expo + Supabase monorepo MVP.',
-      glass: 'One glassmorphism design language built four times: SwiftUI, Compose, Flutter and React Native.',
-      webmvps: 'A collection of fast Next.js vertical websites — including live client work.',
-      blueprint: 'An engineering blueprint that assembles itself — interactive Three.js 3D visualization.',
       vszp: 'Official app & web of Slovakia\'s largest health insurer — digital insurance card, e-prescriptions, health records. Kotlin, Swift & web.',
       nicl: 'CYRIL — the Slovak national integrated travel ticket. One app, one QR code, 39 carriers. React Native mobile + web.',
       epenazenka: 'Receipt-verification app of the Slovak Financial Administration — scan any e-kasa QR receipt and verify it instantly.',
@@ -296,62 +292,6 @@ const I18N = {
         roleDesc: 'Creator — concept, agent design and the MCP integration servers.'
       },
 
-      travel: {
-        tagline: 'Plan trips on the web, use them on the road — a local-first travel planning MVP.',
-        role: 'Creator',
-        ov1: 'Travel Planner splits trip planning between two surfaces: a Next.js 15 web app where the itinerary is built, and an Expo mobile app used during the trip itself.',
-        ov2: 'The stack is a Turbo monorepo with shared TypeScript types and zod schemas, backed by a fully local, Dockerized Supabase (Postgres + Auth + Studio). On the roadmap: a Claude-powered itinerary engine curating points of interest from Overpass and Wikivoyage.',
-        features: [
-          'Web app for planning, mobile app for the road',
-          'Turbo monorepo with shared types and zod validation',
-          'Fully local Supabase stack in Docker',
-          'Planned AI itinerary & POI curation engine'
-        ],
-        roleDesc: 'A solo project — the architecture and both applications.'
-      },
-
-      glass: {
-        tagline: 'One design language, four ecosystems — the same glassmorphism UI built in SwiftUI, Compose, Flutter and React Native.',
-        role: 'Creator',
-        ov1: 'Glass Suite is a design & engineering study: four small single-purpose apps — a pomodoro timer, a habit tracker, a weather app and a notes app — each built in a different native stack, all sharing one Apple "Liquid Glass"–inspired design language.',
-        ov2: 'The point is comparison: how far each ecosystem can push backdrop blur, refraction and motion. SwiftUI with iOS 26 Liquid Glass, Jetpack Compose with haze, Flutter\'s BackdropFilter, and Expo/React Native with expo-blur + Reanimated.',
-        features: [
-          'GlassTimer — pomodoro timer in SwiftUI (iOS 26 Liquid Glass)',
-          'GlassHabits — habit tracker in Kotlin / Jetpack Compose + haze',
-          'GlassWeather — weather app in Flutter (BackdropFilter)',
-          'GlassNotes — notes app in React Native / Expo + Reanimated',
-          'A single shared design specification across all four'
-        ],
-        roleDesc: 'I designed the shared visual language and built all four apps.'
-      },
-
-      webmvps: {
-        tagline: 'A collection of small Next.js websites — fast vertical MVPs plus real, live client work.',
-        role: 'Designer & Developer',
-        ov1: 'A growing collection of compact Next.js sites for different verticals — accounting, café, cars, repairs, watches and a SaaS landing template — used to prototype landing pages fast.',
-        ov2: 'It also contains production client work: the website of a private psychology practice, designed, built and deployed for a real client.',
-        features: [
-          'Seven vertical landing sites',
-          'Next.js App Router + TypeScript',
-          'Live production website for a psychology practice'
-        ],
-        roleDesc: 'Design and development of all sites in the collection.'
-      },
-
-      blueprint: {
-        tagline: 'An engineering blueprint that assembles itself — interactive 3D visualization with Three.js.',
-        role: 'Creator',
-        ov1: 'Three variants of a technical blueprint brought to life with an integrated 3D model: auto-rotation, a staggered assembly fly-in animation, and orbit / click-to-focus navigation.',
-        ov2: 'Built with zero build tooling — plain HTML, CSS and vanilla JavaScript, Three.js from CDN and animated SVG blueprints. Deployed on GitHub Pages.',
-        features: [
-          'Three interactive blueprint variants',
-          'Staggered assembly fly-in animation',
-          'Orbit and click-to-focus camera',
-          'No-build vanilla HTML/CSS/JS stack'
-        ],
-        roleDesc: 'Concept, design and implementation.'
-      },
-
       vszp: {
         tagline: 'The official app of Slovakia\'s largest health insurance company — a digital insurance card, health records and e-prescriptions in every pocket.',
         role: 'Frontend & Test Automation Developer',
@@ -514,10 +454,6 @@ const I18N = {
       acrea: 'AI pipeline generujúca slovenskú projektovú dokumentáciu pre 10 profesií, integrovaná s ArchiCAD-om.',
       ea: 'Osobný AI asistent — Telegram, iMessage, mail, kalendár, research a skutočné rezervácie.',
       aiagents: 'GDPR-safe balíky AI agentov pre malé firmy, bežiace lokálne u zákazníka. Prvý balík: CFO in a box.',
-      travel: 'Naplánujte cestu na webe, používajte ju na cestách. Next.js + Expo + Supabase monorepo MVP.',
-      glass: 'Jeden glassmorphism dizajn postavený štyrikrát: SwiftUI, Compose, Flutter a React Native.',
-      webmvps: 'Kolekcia rýchlych Next.js webov pre rôzne odvetvia — vrátane ostrej klientskej práce.',
-      blueprint: 'Technický výkres, ktorý sa sám poskladá — interaktívna 3D vizualizácia v Three.js.',
       vszp: 'Oficiálna aplikácia a web najväčšej slovenskej zdravotnej poisťovne — digitálny preukaz, eRecepty, zdravotné záznamy. Kotlin, Swift a web.',
       nicl: 'CYRIL — národný integrovaný cestovný lístok. Jedna appka, jeden QR kód, 39 dopravcov. React Native mobil + web.',
       epenazenka: 'Aplikácia Finančnej správy SR na overovanie pokladničných bločkov — naskenujte QR kód z eKasy a hneď viete, či je pravý.',
@@ -716,62 +652,6 @@ const I18N = {
           'Distribúcia cez Docker Compose'
         ],
         roleDesc: 'Autor — koncept, návrh agentov aj integračné MCP servery.'
-      },
-
-      travel: {
-        tagline: 'Naplánujte cestu na webe, používajte ju na cestách — local-first MVP na plánovanie výletov.',
-        role: 'Autor',
-        ov1: 'Travel Planner rozdeľuje plánovanie ciest medzi dve plochy: Next.js 15 webovú aplikáciu, kde vzniká itinerár, a Expo mobilnú aplikáciu používanú počas samotnej cesty.',
-        ov2: 'Stack je Turbo monorepo so zdieľanými TypeScript typmi a zod schémami, podložený plne lokálnou Supabase v Dockeri (Postgres + Auth + Studio). V pláne: AI itinerár engine na Claude, ktorý kurátoruje body záujmu z Overpass a Wikivoyage.',
-        features: [
-          'Web na plánovanie, mobil na cesty',
-          'Turbo monorepo so zdieľanými typmi a zod validáciou',
-          'Plne lokálny Supabase stack v Dockeri',
-          'Plánovaný AI engine na itineráre a kurátorstvo POI'
-        ],
-        roleDesc: 'Sólo projekt — architektúra aj obe aplikácie.'
-      },
-
-      glass: {
-        tagline: 'Jeden dizajnový jazyk, štyri ekosystémy — rovnaké glassmorphism UI postavené v SwiftUI, Compose, Flutteri a React Native.',
-        role: 'Autor',
-        ov1: 'Glass Suite je dizajnová a inžinierska štúdia: štyri malé jednoúčelové aplikácie — pomodoro časovač, habit tracker, počasie a poznámky — každá postavená v inom natívnom stacku, všetky zdieľajú jeden dizajnový jazyk inšpirovaný Apple "Liquid Glass".',
-        ov2: 'Pointou je porovnanie: ako ďaleko vie každý ekosystém potiahnuť backdrop blur, refrakciu a pohyb. SwiftUI s iOS 26 Liquid Glass, Jetpack Compose s haze, Flutter BackdropFilter a Expo/React Native s expo-blur + Reanimated.',
-        features: [
-          'GlassTimer — pomodoro časovač v SwiftUI (iOS 26 Liquid Glass)',
-          'GlassHabits — habit tracker v Kotlin / Jetpack Compose + haze',
-          'GlassWeather — počasie vo Flutteri (BackdropFilter)',
-          'GlassNotes — poznámky v React Native / Expo + Reanimated',
-          'Jedna zdieľaná dizajnová špecifikácia pre všetky štyri'
-        ],
-        roleDesc: 'Navrhol som zdieľaný vizuálny jazyk a postavil všetky štyri aplikácie.'
-      },
-
-      webmvps: {
-        tagline: 'Kolekcia malých Next.js webov — rýchle vertikálne MVP a skutočná klientská práca v produkcii.',
-        role: 'Dizajnér & vývojár',
-        ov1: 'Rastúca kolekcia kompaktných Next.js webov pre rôzne odvetvia — účtovníctvo, kaviareň, autá, opravy, hodinky a SaaS landing šablóna — na rýchle prototypovanie landing pages.',
-        ov2: 'Obsahuje aj produkčnú klientsku prácu: web súkromnej psychologickej praxe, navrhnutý, postavený a nasadený pre reálneho klienta.',
-        features: [
-          'Sedem vertikálnych landing webov',
-          'Next.js App Router + TypeScript',
-          'Ostrý produkčný web pre psychologickú prax'
-        ],
-        roleDesc: 'Dizajn a vývoj všetkých webov v kolekcii.'
-      },
-
-      blueprint: {
-        tagline: 'Technický výkres, ktorý sa sám poskladá — interaktívna 3D vizualizácia v Three.js.',
-        role: 'Autor',
-        ov1: 'Tri varianty technického výkresu oživené integrovaným 3D modelom: automatická rotácia, animácia postupného skladania a orbit / click-to-focus navigácia.',
-        ov2: 'Postavené bez build nástrojov — čisté HTML, CSS a vanilla JavaScript, Three.js z CDN a animované SVG výkresy. Nasadené na GitHub Pages.',
-        features: [
-          'Tri interaktívne varianty výkresu',
-          'Animácia postupného skladania modelu',
-          'Orbit a click-to-focus kamera',
-          'No-build vanilla HTML/CSS/JS stack'
-        ],
-        roleDesc: 'Koncept, dizajn aj implementácia.'
       },
 
       vszp: {
