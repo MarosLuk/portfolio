@@ -18,9 +18,9 @@ const I18N = {
     },
 
     hero: {
-      badge: 'Lead developer · Žilina, Slovakia',
-      title: 'Mobile and web apps, built end to end.',
-      sub: 'I\'m Maroš Lukáč. I design, build and ship products for healthcare, insurance, transport and the public sector — and for my own companies.',
+      badge: 'Frontend developer · Žilina, Slovakia',
+      title: 'Mobile and web apps, from idea to production.',
+      sub: 'I\'m Maroš Lukáč. I build the frontend of mobile and web apps for healthcare, insurance, transport and the public sector, and help out on the backend. On FitJam and GardenYX I was lead developer and built both the frontend and the backend.',
       ctaWork: 'See my work',
       ctaContact: 'Get in touch',
       proof1v: '4+',
@@ -29,10 +29,10 @@ const I18N = {
       proof2l: 'projects shipped',
       proof3v: '8',
       proof3l: 'products live',
-      chip1v: '39 carriers',
-      chip1l: 'One ticket · CYRIL',
-      chip2v: 'VšZP',
-      chip2l: 'Largest Slovak health insurer'
+      chip1v: 'Frontend',
+      chip1l: 'React · React Native · Flutter',
+      chip2v: 'Backend',
+      chip2l: 'Node.js · TypeScript · PostgreSQL'
     },
 
     about: {
@@ -46,8 +46,8 @@ const I18N = {
       fact3l: 'products live in production',
       fact4n: '2',
       fact4l: 'companies founded / co-owned',
-      p1: 'I\'m a lead developer and founder based in <strong>Žilina, Slovakia</strong>. Over the last years I\'ve shipped production systems for government, health insurance, fitness and construction — and a growing family of my own products.',
-      p2: 'I run my own studio <strong>MATROSOFT s.r.o.</strong>, co-own <strong>Dakoty Studio</strong>, and lead development of apps like <strong>GardenYX</strong> and <strong>FitJam</strong>. At <strong>Asseco Central Europe</strong> I work on large-scale mobile and web projects such as VšZP, U+ and Slovak government e-wallet apps.',
+      p1: 'I\'m a frontend developer and founder based in <strong>Žilina, Slovakia</strong>. Over the last years I\'ve built the frontend of production systems for government, health insurance, finance and transport, led development of fitness and gardening apps — and started a growing family of my own products.',
+      p2: 'I run my own studio <strong>MATROSOFT s.r.o.</strong>, co-own <strong>Dakoty Studio</strong>, and led development of <strong>GardenYX</strong> and <strong>FitJam</strong>, frontend and backend. At <strong>Asseco Central Europe</strong> I work on the frontend of large-scale mobile and web projects such as VšZP, U+ and Slovak government e-wallet apps, and help out on the backend.',
       p3: 'I hold a master\'s degree from the <strong>Faculty of Informatics and Information Technologies, STU Bratislava</strong>. Away from the keyboard: economics, fitness, cars and motorcycles.',
       skillsMobile: 'Mobile',
       skillsFrontend: 'Frontend',
@@ -73,17 +73,17 @@ const I18N = {
       e3c: 'Joina Garden s.r.o.',
       e3d: 'GardenYX — AI plant identification & care app. Full-stack from scratch: Flutter app, TypeScript API, PostgreSQL and AI service integrations.',
       e4p: 'Jul 2024 — Present',
-      e4r: 'Lead Developer',
+      e4r: 'Frontend Developer',
       e4c: 'All Soft Corp s.r.o.',
-      e4d: 'Frontend for mobile applications — backend integration, caching and modern design systems.',
+      e4d: 'eFaktúra — frontend of the React Native mobile app (backend integration, caching, design system), plus work on the Java backend.',
       e5p: 'Jan 2024 — Present',
       e5r: 'Lead Developer',
       e5c: 'FitJam Global Platform · Dubai, UAE',
-      e5d: 'Global fitness platform. Flutter app built from scratch, parts of the TypeScript backend and Swift integration for Apple Watch.',
+      e5d: 'Global fitness platform. Flutter app and TypeScript backend built from scratch, plus the Swift integration for Apple Watch.',
       e6p: 'Jan 2023 — Present',
-      e6r: 'Frontend & Test Automation Developer',
+      e6r: 'Frontend Developer',
       e6c: 'Asseco Central Europe, a.s.',
-      e6d: 'Large-scale mobile & web projects: VšZP (Kotlin, Swift, web), U+ SK/CZ & CH/AT, PGSK, NICL (React Native), E-peňaženka — Slovak government mobile apps. Automated tests across all of them.',
+      e6d: 'Large-scale mobile & web projects: VšZP (Kotlin, Swift, web), U+ SK/CZ & CH/AT, PGSK, NICL (React Native), E-peňaženka — Slovak government mobile apps. Frontend, help on the backend and automated tests across all of them.',
       e7p: 'May 2022 — Dec 2022',
       e7r: 'IT Tester',
       e7c: 'Asseco Central Europe, a.s.',
@@ -93,7 +93,7 @@ const I18N = {
     projects: {
       label: 'Selected work',
       title: 'Apps and websites in production',
-      intro: 'Products I lead or built from the ground up — for clients and for my own companies. Each one has its own page with my role and the stack.',
+      intro: 'Products I worked on — the frontend on client projects, frontend and backend where I led development. Each one has its own page with my role and the stack.',
       more: 'More projects',
       moreSub: 'Products in development and tools I use every day.'
     },
@@ -134,7 +134,7 @@ const I18N = {
     },
 
     footer: {
-      tagline: 'Lead developer from Žilina, Slovakia. Mobile and web products for healthcare, insurance, transport and the public sector.',
+      tagline: 'Frontend developer from Žilina, Slovakia. Mobile and web products for healthcare, insurance, transport and the public sector.',
       work: 'Work',
       sections: 'Sections',
       contact: 'Contact',
@@ -199,7 +199,7 @@ const I18N = {
 
       fitjam: {
         tagline: 'A global fitness & wellness platform — workouts, nutrition, mindfulness, community and live streaming in one app.',
-        role: 'Lead Developer',
+        role: 'Lead Developer (full-stack)',
         ov1: 'FitJam is a production fitness platform headquartered in Dubai. The Flutter app (iOS-first) covers the whole wellness journey: guided workouts, diet and nutrition plans, mindfulness and recovery content, community features, live streaming and health tracking with wearable integration.',
         ov2: 'The app follows a clean architecture (service → repository → usecase → viewmodel → UI) built on Riverpod and is live in production at version 2.3+. Subscriptions run on RevenueCat and Stripe; the TypeScript/Express backend is migrating from SQLite to PostgreSQL, with Firebase for auth and messaging and Gemini powering AI features.',
         features: [
@@ -210,7 +210,7 @@ const I18N = {
           'Admin web panel for content and user management',
           'Clean architecture with full observability and release process'
         ],
-        roleDesc: 'As lead developer I built most of the Flutter frontend from scratch, implemented parts of the TypeScript backend, and delivered the Swift integration for Apple Watch.'
+        roleDesc: 'As lead developer I built the whole product from scratch — the Flutter frontend and the TypeScript backend — plus the Swift integration for Apple Watch.'
       },
 
       polier: {
@@ -293,7 +293,7 @@ const I18N = {
 
       vszp: {
         tagline: 'The official app of Slovakia\'s largest health insurance company — a digital insurance card, health records and e-prescriptions in every pocket.',
-        role: 'Frontend & Test Automation Developer',
+        role: 'Frontend Developer · backend support',
         ov1: 'The VšZP mobile app ("Apka VšZP") and web give policyholders of Všeobecná zdravotná poisťovňa — the largest Slovak public health insurer — a digital insurance card (including the European EHIC) for themselves and their children, access to health records and e-prescriptions with drug-interaction warnings, overviews of provided care, and the "Peňaženka zdravia" benefits program.',
         ov2: 'The app also finds nearby doctors, pharmacies and emergency services, signs users in with facial biometrics, and is localized into Slovak, English and Hungarian. I work on it at Asseco Central Europe as part of a long-running product team.',
         features: [
@@ -304,12 +304,12 @@ const I18N = {
           'Biometric (face) sign-in',
           'Localized into Slovak, English and Hungarian'
         ],
-        roleDesc: 'At Asseco Central Europe I develop the native mobile frontends — Android (Kotlin) and iOS (Swift) — and the web, and I build the automated test suites that guard every release.'
+        roleDesc: 'At Asseco Central Europe I develop the native mobile frontends — Android (Kotlin) and iOS (Swift) — and the web, help out on the backend, and build the automated test suites that guard every release.'
       },
 
       nicl: {
         tagline: 'One ticket for the whole of Slovakia — trains, regional buses and city transport in a single app with one QR code.',
-        role: 'React Native Developer (mobile & web)',
+        role: 'Frontend Developer · backend support',
         ov1: 'CYRIL is the app of the Slovak National Integrated Travel Ticket (NICL), run by the Ministry of Transport and delivered by Asseco Central Europe. It merges 39 carriers — railways, regional buses and city transit — into a single ticket represented by one QR code.',
         ov2: 'Launched commercially in July 2026, it supports card payments, Apple Pay and Google Pay, plus a Bluetooth-beacon "pay as you go" mode in cities. The mobile apps are built in React Native, alongside a web app at cyril.sk.',
         features: [
@@ -319,12 +319,12 @@ const I18N = {
           'Bluetooth-beacon PAYGO check-in mode in cities',
           'React Native mobile apps + web app (cyril.sk)'
         ],
-        roleDesc: 'At Asseco Central Europe I develop the React Native frontends — the mobile apps and the web — and write automated tests for the platform.'
+        roleDesc: 'At Asseco Central Europe I develop the React Native frontends — the mobile apps and the web — help out on the backend and write automated tests for the platform.'
       },
 
       epenazenka: {
         tagline: 'The Slovak Financial Administration\'s receipt app — scan the QR code on any receipt and instantly know it\'s genuine.',
-        role: 'Mobile Frontend Developer',
+        role: 'Frontend Developer · backend support',
         ov1: 'ePeňaženka is the official app of the Financial Administration of the Slovak Republic. Users scan the QR code on a cash-register receipt and the app verifies it against the national e-kasa system — showing the verified detail, or warning that the receipt does not exist in e-kasa.',
         ov2: 'Registered users can also store receipts for warranty claims, browse a chronological purchase history and track their spending. Suspicious receipts can be reported to the Financial Administration directly from the app.',
         features: [
@@ -333,12 +333,12 @@ const I18N = {
           'Chronological purchase history and spending overview',
           'Direct reporting of suspicious receipts'
         ],
-        roleDesc: 'I work on the frontend of the mobile applications and their automated test coverage.'
+        roleDesc: 'I work on the frontend of the mobile applications, help out on the backend and cover the apps with automated tests.'
       },
 
       youplus: {
         tagline: 'Web platforms for a paperless, fully digital life-insurance brand across four European markets.',
-        role: 'Frontend & Test Automation Developer',
+        role: 'Frontend Developer · backend support',
         ov1: 'YOUPLUS (branded "U+") is a fully digital life insurer headquartered in Liechtenstein, selling in Slovakia, Czechia, Austria and Switzerland. Asseco Central Europe is its main digital-solutions provider, running the brand\'s web ecosystem on the IooX insurance platform.',
         ov2: 'The country websites cover product presentation, claims reporting and a document center, and act as entry points into the uPortal self-service for clients and brokers — all fully digital and paperless.',
         features: [
@@ -348,12 +348,12 @@ const I18N = {
           'Claims reporting and document center',
           'Runs on Asseco\'s IooX insurance platform'
         ],
-        roleDesc: 'At Asseco Central Europe I develop the web frontends for the SK/CZ and CH/AT markets and maintain their automated test suites.'
+        roleDesc: 'At Asseco Central Europe I develop the web frontends for the SK/CZ and CH/AT markets, help out on the backend and maintain their automated test suites.'
       },
 
       pgsk: {
         tagline: 'The digital web presence of one of Slovakia\'s largest financial-advisory groups and its fully digital insurance company.',
-        role: 'Frontend Developer',
+        role: 'Frontend Developer · backend support',
         ov1: 'PARTNERS GROUP SK is one of the largest Slovak financial-advisory groups, with around 1,600 advisors. Its sister company PARTNERS poisťovňa is a fully digital risk-life insurer running on Asseco\'s IooX insurance platform.',
         ov2: 'The web ecosystem spans the group\'s public websites, the product presentation of PARTNERS poisťovňa, and the client & advisor portal with single sign-on.',
         features: [
@@ -361,12 +361,12 @@ const I18N = {
           'Client & advisor portal with SSO',
           'Fully digital insurance flows on the IooX platform'
         ],
-        roleDesc: 'At Asseco Central Europe I work on frontend development for the web platform and its automated tests.'
+        roleDesc: 'At Asseco Central Europe I work on the frontend of the web platform, help out on the backend and write its automated tests.'
       },
 
       efaktura: {
         tagline: 'Slovak e-invoicing over the Peppol network — live on the web, soon in your pocket, ready for mandatory e-invoicing from January 2027.',
-        role: 'Lead Mobile Developer',
+        role: 'Frontend Developer · backend support',
         status: 'Web live · mobile app coming soon',
         ov1: 'eFaktúra (eInvoice) is the certified Slovak Peppol Access Point of All Soft Corp — the service companies use to send and receive structured e-invoices over the European Peppol network. From 1 January 2027, e-invoicing becomes mandatory for Slovak businesses, so correctness and stability come before new features.',
         ov2: 'The web portal is live in production. We are now building the mobile app for iOS and Android in React Native, and it has not been released yet. The app has no backend or accounts of its own: users sign in with their eFaktúra account and work against the same API as the web portal. Accounting features planned for later are already in the code behind a central feature-flag registry, ready to be switched on once the platform supports them.',
@@ -379,7 +379,7 @@ const I18N = {
           'Company profile, switching between companies, team members and invitations',
           'Push notifications the moment a new invoice arrives'
         ],
-        roleDesc: 'I own the mobile app end to end — architecture, screens, a typed API client generated from the backend OpenAPI contract, tests and release builds. To deliver push notifications I also extended the platform itself: the Access Point publishes accepted invoices to Kafka, and the Java / Spring Boot backend sends pushes straight through APNs and FCM, with per-company limits and device expiry.'
+        roleDesc: 'I build the frontend of the React Native mobile app — architecture, screens, a typed API client generated from the backend OpenAPI contract, tests and release builds. I also work on the backend: for push notifications the Access Point publishes accepted invoices to Kafka, and the Java / Spring Boot backend sends pushes straight through APNs and FCM, with per-company limits and device expiry.'
       }
     }
   },
@@ -397,9 +397,9 @@ const I18N = {
     },
 
     hero: {
-      badge: 'Lead developer · Žilina',
+      badge: 'Frontend vývojár · Žilina',
       title: 'Mobilné a webové appky od nápadu po produkciu.',
-      sub: 'Som Maroš Lukáč. Navrhujem, staviam a nasadzujem produkty pre zdravotníctvo, poisťovníctvo, dopravu a verejný sektor — aj pre vlastné firmy.',
+      sub: 'Som Maroš Lukáč. Staviam frontend mobilných a webových aplikácií pre zdravotníctvo, poisťovníctvo, dopravu a verejný sektor a pomáham aj na backende. FitJam a GardenYX som ako lead developer postavil celé — frontend aj backend.',
       ctaWork: 'Pozrieť projekty',
       ctaContact: 'Napíšte mi',
       proof1v: '4+',
@@ -408,10 +408,10 @@ const I18N = {
       proof2l: 'dodaných projektov',
       proof3v: '8',
       proof3l: 'produktov v prevádzke',
-      chip1v: '39 dopravcov',
-      chip1l: 'Jeden lístok · CYRIL',
-      chip2v: 'VšZP',
-      chip2l: 'Najväčšia zdravotná poisťovňa'
+      chip1v: 'Frontend',
+      chip1l: 'React · React Native · Flutter',
+      chip2v: 'Backend',
+      chip2l: 'Node.js · TypeScript · PostgreSQL'
     },
 
     about: {
@@ -425,8 +425,8 @@ const I18N = {
       fact3l: 'produktov v produkcii',
       fact4n: '2',
       fact4l: 'založené / spoluvlastnené firmy',
-      p1: 'Som lead developer a zakladateľ zo <strong>Žiliny</strong>. Za posledné roky som dodal produkčné systémy pre štátnu správu, zdravotnú poisťovňu, fitness aj stavebníctvo — a rastúcu rodinu vlastných produktov.',
-      p2: 'Vediem vlastné štúdio <strong>MATROSOFT s.r.o.</strong>, som spolumajiteľom <strong>Dakoty Studio</strong> a vediem vývoj aplikácií ako <strong>GardenYX</strong> či <strong>FitJam</strong>. V <strong>Asseco Central Europe</strong> pracujem na veľkých mobilných a webových projektoch ako VšZP, U+ a mobilné aplikácie štátnej e-peňaženky.',
+      p1: 'Som frontend vývojár a zakladateľ zo <strong>Žiliny</strong>. Za posledné roky som staval frontend produkčných systémov pre štátnu správu, zdravotnú poisťovňu, financie a dopravu, viedol vývoj fitness a záhradníckej aplikácie — a budujem rastúcu rodinu vlastných produktov.',
+      p2: 'Vediem vlastné štúdio <strong>MATROSOFT s.r.o.</strong>, som spolumajiteľom <strong>Dakoty Studio</strong> a ako lead developer som postavil <strong>GardenYX</strong> a <strong>FitJam</strong> — frontend aj backend. V <strong>Asseco Central Europe</strong> robím frontend veľkých mobilných a webových projektov ako VšZP, U+ a mobilné aplikácie štátnej e-peňaženky a pomáham aj na backende.',
       p3: 'Vyštudoval som inžinierske štúdium na <strong>Fakulte informatiky a informačných technológií STU v Bratislave</strong>. Mimo klávesnice: ekonómia, fitness, autá a motorky.',
       skillsMobile: 'Mobil',
       skillsFrontend: 'Frontend',
@@ -452,17 +452,17 @@ const I18N = {
       e3c: 'Joina Garden s.r.o.',
       e3d: 'GardenYX — AI aplikácia na identifikáciu rastlín a starostlivosť o ne. Full-stack od nuly: Flutter appka, TypeScript API, PostgreSQL a integrácie AI služieb.',
       e4p: 'Júl 2024 — súčasnosť',
-      e4r: 'Lead Developer',
+      e4r: 'Frontend Developer',
       e4c: 'All Soft Corp s.r.o.',
-      e4d: 'Frontend mobilných aplikácií — napojenie na backend, cachovanie a moderné dizajnové systémy.',
+      e4d: 'eFaktúra — frontend mobilnej aplikácie v React Native (napojenie na backend, cachovanie, dizajnový systém) a práca na backende v Jave.',
       e5p: 'Január 2024 — súčasnosť',
       e5r: 'Lead Developer',
       e5c: 'FitJam Global Platform · Dubaj, SAE',
-      e5d: 'Globálna fitness platforma. Flutter aplikácia postavená od nuly, časti TypeScript backendu a Swift integrácia pre Apple Watch.',
+      e5d: 'Globálna fitness platforma. Flutter aplikácia aj TypeScript backend postavené od nuly a Swift integrácia pre Apple Watch.',
       e6p: 'Január 2023 — súčasnosť',
-      e6r: 'Frontend & Test Automation Developer',
+      e6r: 'Frontend Developer',
       e6c: 'Asseco Central Europe, a.s.',
-      e6d: 'Veľké mobilné a webové projekty: VšZP (Kotlin, Swift, web), U+ SK/CZ & CH/AT, PGSK, NICL (React Native), E-peňaženka — mobilné aplikácie pre štát. Automatizované testy naprieč všetkými.',
+      e6d: 'Veľké mobilné a webové projekty: VšZP (Kotlin, Swift, web), U+ SK/CZ & CH/AT, PGSK, NICL (React Native), E-peňaženka — mobilné aplikácie pre štát. Frontend, výpomoc na backende a automatizované testy naprieč všetkými.',
       e7p: 'Máj 2022 — December 2022',
       e7r: 'IT Tester',
       e7c: 'Asseco Central Europe, a.s.',
@@ -472,7 +472,7 @@ const I18N = {
     projects: {
       label: 'Vybrané projekty',
       title: 'Appky a weby v produkcii',
-      intro: 'Produkty, ktoré vediem alebo som postavil od základov — pre klientov aj pre vlastné firmy. Každý má vlastnú stránku s mojou rolou a technológiami.',
+      intro: 'Produkty, na ktorých som pracoval — frontend na klientskych projektoch, frontend aj backend tam, kde som viedol vývoj. Každý má vlastnú stránku s mojou rolou a technológiami.',
       more: 'Ďalšie projekty',
       moreSub: 'Produkty vo vývoji a nástroje, ktoré denne používam.'
     },
@@ -513,7 +513,7 @@ const I18N = {
     },
 
     footer: {
-      tagline: 'Lead developer zo Žiliny. Mobilné a webové produkty pre zdravotníctvo, poisťovníctvo, dopravu a verejný sektor.',
+      tagline: 'Frontend vývojár zo Žiliny. Mobilné a webové produkty pre zdravotníctvo, poisťovníctvo, dopravu a verejný sektor.',
       work: 'Projekty',
       sections: 'Sekcie',
       contact: 'Kontakt',
@@ -578,7 +578,7 @@ const I18N = {
 
       fitjam: {
         tagline: 'Globálna fitness & wellness platforma — tréningy, výživa, mindfulness, komunita a live streaming v jednej aplikácii.',
-        role: 'Lead Developer',
+        role: 'Lead Developer (full-stack)',
         ov1: 'FitJam je produkčná fitness platforma so sídlom v Dubaji. Flutter aplikácia (primárne iOS) pokrýva celú wellness cestu: vedené tréningy, jedálničky a výživové plány, mindfulness a regeneráciu, komunitné funkcie, live streaming a sledovanie zdravia s integráciou nositeľných zariadení.',
         ov2: 'Aplikácia stojí na clean architecture (service → repository → usecase → viewmodel → UI) s Riverpodom a beží v produkcii vo verzii 2.3+. Predplatné zabezpečuje RevenueCat a Stripe; TypeScript/Express backend prechádza migráciou zo SQLite na PostgreSQL, Firebase rieši autentifikáciu a notifikácie a AI funkcie poháňa Gemini.',
         features: [
@@ -589,7 +589,7 @@ const I18N = {
           'Admin webový panel na správu obsahu a používateľov',
           'Clean architecture s plnou observabilitou a release procesom'
         ],
-        roleDesc: 'Ako lead developer som postavil väčšinu Flutter frontendu od nuly, implementoval časti TypeScript backendu a dodal Swift integráciu pre Apple Watch.'
+        roleDesc: 'Ako lead developer som postavil celý produkt od nuly — Flutter frontend aj TypeScript backend — a dodal Swift integráciu pre Apple Watch.'
       },
 
       polier: {
@@ -672,7 +672,7 @@ const I18N = {
 
       vszp: {
         tagline: 'Oficiálna aplikácia najväčšej slovenskej zdravotnej poisťovne — digitálny preukaz, zdravotné záznamy a eRecepty v každom vrecku.',
-        role: 'Frontend & Test Automation Developer',
+        role: 'Frontend Developer · výpomoc na backende',
         ov1: 'Mobilná aplikácia VšZP („Apka VšZP") a web dávajú poistencom Všeobecnej zdravotnej poisťovne — najväčšej zdravotnej poisťovne na Slovensku — digitálny preukaz poistenca (vrátane európskeho EHIC) pre seba aj deti, prístup k zdravotným záznamom a eReceptom s upozorneniami na interakcie liekov, prehľad poskytnutej starostlivosti a benefitný program Peňaženka zdravia.',
         ov2: 'Aplikácia tiež nájde najbližších lekárov, lekárne a pohotovosti, prihlasuje biometriou tváre a je lokalizovaná do slovenčiny, angličtiny a maďarčiny. Pracujem na nej v Asseco Central Europe ako súčasť dlhodobého produktového tímu.',
         features: [
@@ -683,12 +683,12 @@ const I18N = {
           'Biometrické prihlásenie tvárou',
           'Lokalizácia do slovenčiny, angličtiny a maďarčiny'
         ],
-        roleDesc: 'V Asseco Central Europe vyvíjam natívne mobilné frontendy — Android (Kotlin) a iOS (Swift) — aj web, a staviam automatizované testy, ktoré strážia každé vydanie.'
+        roleDesc: 'V Asseco Central Europe vyvíjam natívne mobilné frontendy — Android (Kotlin) a iOS (Swift) — aj web, pomáham na backende a staviam automatizované testy, ktoré strážia každé vydanie.'
       },
 
       nicl: {
         tagline: 'Jeden lístok pre celé Slovensko — vlaky, prímestské autobusy a MHD v jednej aplikácii s jedným QR kódom.',
-        role: 'React Native Developer (mobil & web)',
+        role: 'Frontend Developer · výpomoc na backende',
         ov1: 'CYRIL je aplikácia Národného integrovaného cestovného lístka (NICL), ktorý prevádzkuje Ministerstvo dopravy SR a dodáva Asseco Central Europe. Spája 39 dopravcov — železnice, prímestské autobusy a MHD — do jedného lístka reprezentovaného jedným QR kódom.',
         ov2: 'Do komerčnej prevádzky vstúpil v júli 2026, podporuje platby kartou, Apple Pay a Google Pay a v mestách aj režim „pay as you go" cez Bluetooth beacony. Mobilné aplikácie sú postavené v React Native, spolu s webovou aplikáciou na cyril.sk.',
         features: [
@@ -698,12 +698,12 @@ const I18N = {
           'PAYGO check-in cez Bluetooth beacony v mestách',
           'React Native mobilné aplikácie + webová aplikácia (cyril.sk)'
         ],
-        roleDesc: 'V Asseco Central Europe vyvíjam React Native frontendy — mobilné aplikácie aj web — a píšem automatizované testy platformy.'
+        roleDesc: 'V Asseco Central Europe vyvíjam React Native frontendy — mobilné aplikácie aj web — pomáham na backende a píšem automatizované testy platformy.'
       },
 
       epenazenka: {
         tagline: 'Aplikácia Finančnej správy SR na bločky — naskenujte QR kód z bločku a hneď viete, či je pravý.',
-        role: 'Mobile Frontend Developer',
+        role: 'Frontend Developer · výpomoc na backende',
         ov1: 'ePeňaženka je oficiálna aplikácia Finančnej správy Slovenskej republiky. Používateľ naskenuje QR kód z pokladničného bločku a aplikácia ho overí voči národnému systému eKasa — zobrazí overený detail, alebo upozorní, že bloček v eKase neexistuje.',
         ov2: 'Registrovaní používatelia si navyše môžu bločky ukladať (napríklad pre reklamácie), prezerať chronologickú históriu nákupov a sledovať výdavky. Podozrivé bločky sa dajú nahlásiť Finančnej správe priamo z aplikácie.',
         features: [
@@ -712,12 +712,12 @@ const I18N = {
           'Chronologická história nákupov a prehľad výdavkov',
           'Priame nahlásenie podozrivých bločkov'
         ],
-        roleDesc: 'Pracujem na frontende mobilných aplikácií a na ich automatizovanom testovacom pokrytí.'
+        roleDesc: 'Pracujem na frontende mobilných aplikácií, pomáham na backende a pokrývam aplikácie automatizovanými testami.'
       },
 
       youplus: {
         tagline: 'Webové platformy pre bezpapierovú, plne digitálnu značku životného poistenia na štyroch európskych trhoch.',
-        role: 'Frontend & Test Automation Developer',
+        role: 'Frontend Developer · výpomoc na backende',
         ov1: 'YOUPLUS (so značkou „U+") je plne digitálna životná poisťovňa so sídlom v Lichtenštajnsku, pôsobiaca na Slovensku, v Česku, Rakúsku a Švajčiarsku. Asseco Central Europe je jej hlavným dodávateľom digitálnych riešení a prevádzkuje webový ekosystém značky na poistnej platforme IooX.',
         ov2: 'Webové stránky jednotlivých krajín pokrývajú prezentáciu produktov, hlásenie poistných udalostí a dokumentačné centrum a slúžia ako vstup do samoobslužného uPortalu pre klientov a maklérov — všetko plne digitálne a bez papiera.',
         features: [
@@ -727,12 +727,12 @@ const I18N = {
           'Hlásenie poistných udalostí a dokumentačné centrum',
           'Beží na poistnej platforme Asseco IooX'
         ],
-        roleDesc: 'V Asseco Central Europe vyvíjam webové frontendy pre trhy SK/CZ a CH/AT a udržiavam ich automatizované testovacie sady.'
+        roleDesc: 'V Asseco Central Europe vyvíjam webové frontendy pre trhy SK/CZ a CH/AT, pomáham na backende a udržiavam ich automatizované testovacie sady.'
       },
 
       pgsk: {
         tagline: 'Digitálna webová prezentácia jednej z najväčších finančno-poradenských skupín na Slovensku a jej plne digitálnej poisťovne.',
-        role: 'Frontend Developer',
+        role: 'Frontend Developer · výpomoc na backende',
         ov1: 'PARTNERS GROUP SK je jedna z najväčších slovenských finančno-poradenských skupín s približne 1 600 poradcami. Jej sesterská spoločnosť PARTNERS poisťovňa je plne digitálna riziková životná poisťovňa bežiaca na poistnej platforme Asseco IooX.',
         ov2: 'Webový ekosystém zahŕňa verejné weby skupiny, prezentáciu produktov PARTNERS poisťovne a klientsky & poradenský portál s jednotným prihlásením (SSO).',
         features: [
@@ -740,12 +740,12 @@ const I18N = {
           'Klientsky a poradenský portál so SSO',
           'Plne digitálne poistné procesy na platforme IooX'
         ],
-        roleDesc: 'V Asseco Central Europe pracujem na frontend vývoji webovej platformy a jej automatizovaných testoch.'
+        roleDesc: 'V Asseco Central Europe pracujem na frontende webovej platformy, pomáham na backende a píšem jej automatizované testy.'
       },
 
       efaktura: {
         tagline: 'Slovenská e-fakturácia cez sieť Peppol — na webe už v produkcii, čoskoro aj vo vrecku, pripravená na povinnú e-fakturáciu od januára 2027.',
-        role: 'Lead Mobile Developer',
+        role: 'Frontend Developer · výpomoc na backende',
         status: 'Web v produkcii · mobilná appka čoskoro',
         ov1: 'eFaktúra (eInvoice) je certifikovaný slovenský Peppol Access Point spoločnosti All Soft Corp — služba, cez ktorú firmy posielajú a prijímajú štruktúrované e-faktúry v európskej sieti Peppol. Od 1. januára 2027 je e-fakturácia pre slovenské firmy povinná, preto majú správnosť a stabilita prednosť pred novinkami.',
         ov2: 'Webový portál je v produkcii. Teraz staviame mobilnú appku pre iOS a Android v React Native, ktorá ešte len vyjde. Appka nemá vlastný backend ani účty: používateľ sa prihlási účtom eFaktúry a pracuje s tým istým API ako webový portál. Účtovné funkcie plánované na neskôr sú už v kóde za centrálnym registrom prepínačov a zapnú sa, keď ich platforma bude podporovať.',
@@ -758,7 +758,7 @@ const I18N = {
           'Profil firmy, prepínanie medzi firmami, členovia tímu a pozvánky',
           'Push notifikácia hneď, ako príde nová faktúra'
         ],
-        roleDesc: 'Mobilnú appku mám na starosti celú — architektúru, obrazovky, typový API klient generovaný z OpenAPI kontraktu backendu, testy aj release buildy. Kvôli push notifikáciám som rozšíril aj samotnú platformu: Access Point publikuje prijaté faktúry do Kafky a backend v Jave / Spring Boot posiela pushe priamo cez APNs a FCM, s limitmi na firmu a expiráciou zariadení.'
+        roleDesc: 'Staviam frontend mobilnej aplikácie v React Native — architektúru, obrazovky, typový API klient generovaný z OpenAPI kontraktu backendu, testy aj release buildy. Pracujem aj na backende: kvôli push notifikáciám Access Point publikuje prijaté faktúry do Kafky a backend v Jave / Spring Boot posiela pushe priamo cez APNs a FCM, s limitmi na firmu a expiráciou zariadení.'
       }
     }
   }

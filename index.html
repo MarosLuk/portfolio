@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maroš Lukáč — Lead Developer</title>
-  <meta name="description" content="Maroš Lukáč — lead developer from Žilina, Slovakia. Mobile and web products for healthcare, insurance, transport and the public sector. Flutter, React Native, Kotlin, Swift, React, TypeScript.">
+  <title>Maroš Lukáč — Frontend Developer</title>
+  <meta name="description" content="Maroš Lukáč — frontend developer from Žilina, Slovakia. Mobile and web products for healthcare, insurance, transport and the public sector. Flutter, React Native, Kotlin, Swift, React, TypeScript.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23151515'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23F6F5F1' text-anchor='middle'%3EML%3C/text%3E%3C/svg%3E">
   <script>
     (function () {
@@ -20,7 +20,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="assets/css/style.css?v=8">
+  <link rel="stylesheet" href="assets/css/style.css?v=9">
 </head>
 <body>
 
@@ -56,8 +56,8 @@
     <section class="hero">
       <div class="container hero__inner">
         <div>
-          <span class="badge fade-in" style="--d: 50ms"><span class="badge__dot"></span><span data-i18n="hero.badge">Lead developer · Žilina, Slovakia</span></span>
-          <h1 class="hero__title" data-i18n="hero.title">Mobile and web apps, built end to end.</h1>
+          <span class="badge fade-in" style="--d: 50ms"><span class="badge__dot"></span><span data-i18n="hero.badge">Frontend developer · Žilina, Slovakia</span></span>
+          <h1 class="hero__title" data-i18n="hero.title">Mobile and web apps, from idea to production.</h1>
           <p class="hero__sub fade-in" style="--d: 550ms" data-i18n="hero.sub"></p>
           <div class="hero__actions fade-in" style="--d: 700ms">
             <a href="#projects" class="btn btn--primary btn--lg"><span data-i18n="hero.ctaWork">See my work</span><svg class="down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg></a>
@@ -73,21 +73,54 @@
         </div>
 
         <div class="hero__visual fade-in" style="--d: 400ms" aria-hidden="true">
-          <div class="phone">
-            <div class="phone__body">
-              <div class="phone__screen">
-                <img src="assets/img/nicl/hero.webp" alt="" width="600" height="1300" fetchpriority="high">
-                <span class="phone__island"></span>
+          <div class="hero-stage">
+            <div class="browser">
+              <div class="browser__bar"><span class="browser__dots"><i></i><i></i><i></i></span><span class="browser__url"></span></div>
+              <div class="browser__body">
+                <div class="ui-side"><i class="ui-side__logo"></i><i class="on"></i><i></i><i></i><i></i></div>
+                <div class="ui-main">
+                  <div class="ui-head"><span class="sk"></span><span class="ui-btn"></span></div>
+                  <div class="ui-kpis">
+                    <div class="ui-kpi"><span class="sk"></span><b>12.4k</b></div>
+                    <div class="ui-kpi"><span class="sk"></span><b>99.9%</b></div>
+                    <div class="ui-kpi"><span class="sk"></span><b>4.8</b></div>
+                  </div>
+                  <div class="ui-chart"><i style="--h: 34%"></i><i style="--h: 48%"></i><i style="--h: 40%"></i><i style="--h: 58%"></i><i style="--h: 52%"></i><i style="--h: 66%"></i><i style="--h: 60%"></i><i style="--h: 74%"></i><i style="--h: 70%"></i><i style="--h: 82%"></i><i style="--h: 78%"></i><i style="--h: 92%" class="on"></i></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="float-chip float-chip--a">
-            <span class="icon-tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M13 5v2"/><path d="M13 17v2"/><path d="M13 11v2"/></svg></span>
-            <span><span class="float-chip__value" data-i18n="hero.chip1v"></span><span class="float-chip__label" data-i18n="hero.chip1l"></span></span>
-          </div>
-          <div class="float-chip float-chip--b">
-            <span class="icon-tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></span>
-            <span><span class="float-chip__value" data-i18n="hero.chip2v"></span><span class="float-chip__label" data-i18n="hero.chip2l"></span></span>
+            <div class="phone">
+              <div class="phone__body">
+                <div class="phone__screen app">
+                  <span class="phone__island"></span>
+                  <div class="app__status"><b>9:41</b><span class="app__sig"><i></i><i></i><i></i><i></i><span class="app__bat"></span></span></div>
+                  <div class="app__head"><span><small>This week</small><b>Overview</b></span><span class="app__avatar">ML</span></div>
+                  <div class="app__card">
+                    <small>Active users</small><b>12.4k</b><span class="app__delta">+24%</span>
+                    <svg class="app__spark" viewBox="0 0 120 36" preserveAspectRatio="none"><path class="area" d="M0 30 L12 27 L24 29 L36 22 L48 24 L60 17 L72 19 L84 12 L96 14 L108 7 L120 4 L120 36 L0 36 Z"/><path d="M0 30 L12 27 L24 29 L36 22 L48 24 L60 17 L72 19 L84 12 L96 14 L108 7 L120 4"/></svg>
+                  </div>
+                  <div class="app__tiles">
+                    <div class="app__tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><b>99.8%</b><small>Crash-free</small></div>
+                    <div class="app__tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"/></svg><b>4.8</b><small>App rating</small></div>
+                  </div>
+                  <div class="app__list">
+                    <div class="app__row"><span class="app__ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span><b>iOS 2.4.0</b><span class="app__tag">Live</span></div>
+                    <div class="app__row"><span class="app__ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></span><b>Android 2.4.0</b><span class="app__tag">Live</span></div>
+                    <div class="app__row"><span class="app__ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg></span><b>Web 3.1.0</b><span class="app__tag">Live</span></div>
+                    <div class="app__row"><span class="app__ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg></span><b>API 3.0.0</b><span class="app__tag">Live</span></div>
+                  </div>
+                  <div class="app__tabbar"><i class="on"></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="float-chip float-chip--a">
+              <span class="icon-tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span>
+              <span><span class="float-chip__value" data-i18n="hero.chip1v"></span><span class="float-chip__label" data-i18n="hero.chip1l"></span></span>
+            </div>
+            <div class="float-chip float-chip--b">
+              <span class="icon-tile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg></span>
+              <span><span class="float-chip__value" data-i18n="hero.chip2v"></span><span class="float-chip__label" data-i18n="hero.chip2l"></span></span>
+            </div>
           </div>
         </div>
       </div>
@@ -517,7 +550,7 @@
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=6"></script>
+  <script src="assets/js/i18n.js?v=7"></script>
   <script src="assets/js/main.js?v=6"></script>
 </body>
 </html>

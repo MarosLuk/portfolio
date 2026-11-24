@@ -70,5 +70,6 @@ python3 -m http.server 8000
   Mobile apps show three thumbnails `assets/img/<slug>/card-1..3.webp` (360 px wide);
   websites show one `card-1.webp` (1100 px wide) in a frame (`.work-card__frame`).
   Projects without screenshots are cards in "More projects" (`.feature-grid`, `a.feature-card`).
-  The hero phone shows `assets/img/nicl/hero.webp` (a real app screen, 600 px wide). Make thumbnails with:
+  The hero visual is a generic browser + phone pair drawn in HTML/CSS (`.hero-stage`, no project
+  screenshot), so it stays neutral. Make card thumbnails with:
   `magick shot-1.webp -resize 360x -strip -quality 82 card-1.webp`
