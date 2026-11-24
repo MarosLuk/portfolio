@@ -1,6 +1,6 @@
 /* ============================================
    Maroš Lukáč — Portfolio
-   i18n (EN/SK), theme toggle, reveal animations
+   i18n (EN/SK), theme toggle, nav, reveal animations
    ============================================ */
 
 (function () {
@@ -11,8 +11,10 @@
   const supported = ['en', 'sk'];
 
   function getLang() {
-    const stored = localStorage.getItem(LANG_KEY);
-    if (supported.includes(stored)) return stored;
+    try {
+      const stored = localStorage.getItem(LANG_KEY);
+      if (supported.includes(stored)) return stored;
+    } catch (e) {}
     return 'en'; // English is the default
   }
 
@@ -20,6 +22,28 @@
     return key.split('.').reduce(function (obj, part) {
       return obj && obj[part] !== undefined ? obj[part] : undefined;
     }, dict);
+  }
+
+  // The hero title rises in word by word, but only on the first paint;
+  // a language switch just swaps the words.
+  let titleAnimated = false;
+  function splitHeroTitle() {
+    const el = document.querySelector('.hero__title');
+    if (!el) return;
+    const words = el.textContent.trim().split(/\s+/);
+    el.textContent = '';
+    words.forEach(function (word, i) {
+      const outer = document.createElement('span');
+      outer.className = 'w';
+      const inner = document.createElement('span');
+      inner.style.setProperty('--i', i);
+      inner.textContent = word;
+      outer.appendChild(inner);
+      el.appendChild(outer);
+      if (i < words.length - 1) el.appendChild(document.createTextNode(' '));
+    });
+    el.classList.toggle('is-anim', !titleAnimated);
+    titleAnimated = true;
   }
 
   function applyLang(lang) {
@@ -54,6 +78,8 @@
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 
+    splitHeroTitle();
+
     // Page <title> swap
     const titleKey = document.body.getAttribute('data-title-key');
     if (titleKey) {
@@ -61,21 +87,23 @@
       if (t) document.title = t;
     }
 
-    localStorage.setItem(LANG_KEY, lang);
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
   }
 
   /* ---------- Theme ---------- */
   const THEME_KEY = 'ml-portfolio-theme';
 
   function getTheme() {
-    const stored = localStorage.getItem(THEME_KEY);
-    if (stored === 'light' || stored === 'dark') return stored;
+    try {
+      const stored = localStorage.getItem(THEME_KEY);
+      if (stored === 'light' || stored === 'dark') return stored;
+    } catch (e) {}
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem(THEME_KEY, theme);
+    try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
   }
 
   /* ---------- Init on DOM ready ---------- */
@@ -97,7 +125,7 @@
       });
     }
 
-    /* Mobile menu */
+    /* Nav: mobile menu, glass bar once scrolled, hides on the way down */
     const nav = document.querySelector('.nav');
     const burger = document.querySelector('.nav__burger');
     if (nav && burger) {
@@ -114,40 +142,50 @@
         });
       });
     }
+    if (nav) {
+      let lastY = window.scrollY;
+      const onScroll = function () {
+        const y = window.scrollY;
+        nav.classList.toggle('is-scrolled', y > 40);
+        const delta = y - lastY;
+        if (y < 80 || delta < -6) nav.classList.remove('is-hidden');
+        else if (delta > 6) nav.classList.add('is-hidden');
+        lastY = y;
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    }
 
     /* Reveal on scroll */
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+    // Observe single elements and every child of a stagger group separately.
+    // Watching a whole tall grid with a ratio threshold kept its first cards
+    // hidden (or hidden for good on phones) while they were already on screen.
+    const revealEls = document.querySelectorAll('.reveal, .reveal-stagger > *');
     if (reduced || !('IntersectionObserver' in window)) {
       revealEls.forEach(function (el) { el.classList.add('is-visible'); });
     } else {
       const observer = new IntersectionObserver(function (entries) {
+        let batch = 0;
         entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            observer.unobserve(entry.target);
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          // Children that enter together fade in one after another.
+          if (el.parentElement && el.parentElement.classList.contains('reveal-stagger')) {
+            const delay = Math.min(batch, 5) * 70;
+            batch += 1;
+            if (delay) {
+              el.style.transitionDelay = delay + 'ms';
+              // Drop the delay afterwards so hover effects stay instant.
+              setTimeout(function () { el.style.transitionDelay = ''; }, delay + 750);
+            }
           }
+          el.classList.add('is-visible');
+          observer.unobserve(el);
         });
-      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
       revealEls.forEach(function (el) { observer.observe(el); });
     }
-
-    /* Cursor-follow glow on project cards */
-    document.querySelectorAll('.project-card').forEach(function (card) {
-      card.addEventListener('mousemove', function (e) {
-        const rect = card.getBoundingClientRect();
-        card.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
-        card.style.setProperty('--my', (e.clientY - rect.top) + 'px');
-      });
-    });
-
-    /* Whole project card is clickable */
-    document.querySelectorAll('.project-card[data-href]').forEach(function (card) {
-      card.addEventListener('click', function (e) {
-        if (e.target.closest('a')) return;
-        window.location.href = card.getAttribute('data-href');
-      });
-    });
 
     /* Footer year */
     document.querySelectorAll('[data-year]').forEach(function (el) {

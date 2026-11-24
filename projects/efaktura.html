@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eFaktúra — Maroš Lukáč</title>
+  <meta name="description" content="eFaktúra — project by Maroš Lukáč, lead developer & founder.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23151515'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23F6F5F1' text-anchor='middle'%3EML%3C/text%3E%3C/svg%3E">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('ml-portfolio-theme');
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css?v=8">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo"><span class="nav__mark">ML</span><span>Maroš Lukáč</span></a>
+      <ul class="nav__links">
+        <li><a href="../index.html#projects" data-i18n="nav.projects">Work</a></li>
+        <li><a href="../index.html#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav__controls">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="sk">SK</button>
+        </div>
+        <button type="button" class="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        </button>
+        <a href="../index.html#contact" class="btn btn--primary btn--sm nav__cta" data-i18n="nav.cta">Get in touch</a>
+        <button type="button" class="nav__burger" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="8" y2="8"/><line x1="4" x2="20" y1="16" y2="16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= PROJECT HERO ================= -->
+    <section class="project-hero">
+      <div class="hero__bg"></div>
+      <div class="container">
+        <a href="../index.html#projects" class="back-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+          <span data-i18n="proj.back">All projects</span>
+        </a>
+        <h1 class="project-hero__title reveal">eFaktúra</h1>
+        <p class="project-hero__tagline reveal" data-i18n="p.efaktura.tagline"></p>
+
+        <div class="project-meta reveal-stagger">
+          <div class="project-meta__item">
+            <div class="project-meta__label" data-i18n="proj.role">Role</div>
+            <div class="project-meta__value" data-i18n="p.efaktura.role"></div>
+          </div>
+          <div class="project-meta__item">
+            <div class="project-meta__label" data-i18n="proj.timeline">Timeline</div>
+            <div class="project-meta__value" data-i18n="time.since2026"></div>
+          </div>
+          <div class="project-meta__item">
+            <div class="project-meta__label" data-i18n="proj.platform">Platform</div>
+            <div class="project-meta__value">Web · iOS · Android</div>
+          </div>
+          <div class="project-meta__item">
+            <div class="project-meta__label" data-i18n="proj.status">Status</div>
+            <div class="project-meta__value" data-i18n="p.efaktura.status"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECT BODY ================= -->
+    <section class="project-body">
+      <div class="container">
+        <div class="project-body__grid">
+
+          <div class="project-content">
+            <div class="project-section reveal">
+              <h2 data-i18n="proj.overview">Overview</h2>
+              <p data-i18n="p.efaktura.ov1"></p>
+              <p data-i18n="p.efaktura.ov2"></p>
+            </div>
+
+            <div class="project-section reveal">
+              <h2 data-i18n="proj.gallery">App screenshots</h2>
+              <div class="gallery gallery--wide">
+                <a href="../assets/img/efaktura/shot-1.webp" target="_blank" rel="noopener"><img src="../assets/img/efaktura/shot-1.webp" alt="eFaktúra — screenshot 1" loading="lazy"></a>
+                <a href="../assets/img/efaktura/shot-2.webp" target="_blank" rel="noopener"><img src="../assets/img/efaktura/shot-2.webp" alt="eFaktúra — screenshot 2" loading="lazy"></a>
+              </div>
+            </div>
+
+            <div class="project-section reveal">
+              <h2 data-i18n="proj.features">Key features</h2>
+              <ul class="feature-list" data-i18n-list="p.efaktura.features"></ul>
+            </div>
+
+            <div class="project-section reveal">
+              <h2 data-i18n="proj.myrole">My role</h2>
+              <p data-i18n="p.efaktura.roleDesc"></p>
+            </div>
+          </div>
+
+          <aside class="project-aside reveal">
+            <div class="aside-card">
+              <h3 data-i18n="proj.links">Links</h3>
+              <ul class="link-list">
+                <li><a href="https://www.allsoftcorp.com/e-invoice" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span data-i18n="proj.linkWeb"></span><svg class="ext" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a></li>
+              </ul>
+            </div>
+            <div class="aside-card">
+              <h3 data-i18n="proj.stack">Tech stack</h3>
+              <div class="chips">
+                <span class="chip">React Native</span>
+                <span class="chip">Expo</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">TanStack Query</span>
+                <span class="chip">Zod</span>
+                <span class="chip">Vitest</span>
+                <span class="chip">Java · Spring Boot</span>
+                <span class="chip">Kafka</span>
+                <span class="chip">APNs · FCM</span>
+                <span class="chip">Peppol</span>
+              </div>
+            </div>
+          </aside>
+
+        </div>
+
+        <div class="project-nav">
+          <a href="nicl.html" class="pnav">
+            <span class="pnav__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></span>
+            <span><span class="pnav__label" data-i18n="proj.prev">Previous project</span><span class="pnav__title">CYRIL · NICL</span></span>
+          </a>
+          <a href="youplus.html" class="pnav pnav--next">
+            <span><span class="pnav__label" data-i18n="proj.next">Next project</span><span class="pnav__title">U+ · YOUPLUS</span></span>
+            <span class="pnav__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="nav__logo"><span class="nav__mark">ML</span><span>Maroš Lukáč</span></a>
+          <p data-i18n="footer.tagline"></p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.work">Work</h4>
+          <ul><li><a href="vszp.html">VšZP</a></li><li><a href="nicl.html">CYRIL · NICL</a></li><li><a href="efaktura.html">eFaktúra</a></li><li><a href="youplus.html">U+ · YOUPLUS</a></li><li><a href="fitjam.html">FitJam</a></li><li><a href="gardenyx.html">GardenYX</a></li></ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.sections">Sections</h4>
+          <ul>
+            <li><a href="../index.html#projects" data-i18n="nav.projects">Work</a></li>
+            <li><a href="../index.html#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+            <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li><a href="mailto:maros.lukac2000@gmail.com">maros.lukac2000@gmail.com</a></li>
+            <li><a href="tel:+421917519030">+421 917 519 030</a></li>
+            <li data-i18n="contact.location">Žilina, Slovakia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Maroš Lukáč. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <a href="#" data-i18n="footer.top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js?v=6"></script>
+  <script src="../assets/js/main.js?v=6"></script>
+</body>
+</html>

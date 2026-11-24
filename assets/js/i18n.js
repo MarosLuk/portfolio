@@ -12,30 +12,43 @@ const I18N = {
     nav: {
       about: 'About',
       experience: 'Experience',
-      projects: 'Projects',
-      contact: 'Contact'
+      projects: 'Work',
+      contact: 'Contact',
+      cta: 'Get in touch'
     },
 
     hero: {
-      eyebrow: 'Maroš Lukáč · Lead Developer & Founder',
-      title: 'I build products from first commit to <span class="accent">live users</span>.',
-      subtitle: 'Full-stack & mobile developer from Slovakia. I design, build and ship production web and mobile systems end-to-end — Flutter, React Native, React, Kotlin, Swift and TypeScript/Node.',
-      ctaProjects: 'View projects',
-      ctaContact: 'Get in touch'
+      badge: 'Lead developer · Žilina, Slovakia',
+      title: 'Mobile and web apps, built end to end.',
+      sub: 'I\'m Maroš Lukáč. I design, build and ship products for healthcare, insurance, transport and the public sector — and for my own companies.',
+      ctaWork: 'See my work',
+      ctaContact: 'Get in touch',
+      proof1v: '4+',
+      proof1l: 'years in production',
+      proof2v: '15+',
+      proof2l: 'projects shipped',
+      proof3v: '8',
+      proof3l: 'products live',
+      chip1v: '39 carriers',
+      chip1l: 'One ticket · CYRIL',
+      chip2v: 'VšZP',
+      chip2l: 'Largest Slovak health insurer'
     },
 
     about: {
       label: 'About me',
-      title: 'Developer, founder,<br>product owner.',
-      p1: 'I\'m a lead developer and founder based in <strong>Martin, Slovakia</strong>. Over the last years I\'ve shipped production systems for government, health insurance, fitness and construction — and a growing family of my own products.',
-      p2: 'I run my own studio <strong>MATROSOFT s.r.o.</strong>, co-own <strong>Dakoty Studio</strong>, and lead development of apps like <strong>GardenYX</strong> and <strong>FitJam</strong>. At <strong>Asseco Central Europe</strong> I work on large-scale mobile and web projects such as VšZP, U+ and Slovak government e-wallet apps.',
-      p3: 'I hold a master\'s degree from the <strong>Faculty of Informatics and Information Technologies, STU Bratislava</strong>. Away from the keyboard: economics, fitness, cars and motorcycles.',
+      title: 'Developer, founder, product owner.',
       fact1n: '4+',
       fact1l: 'years of professional experience',
       fact2n: '15+',
       fact2l: 'projects designed & shipped',
-      fact3n: '2',
-      fact3l: 'companies founded / co-owned',
+      fact3n: '8',
+      fact3l: 'products live in production',
+      fact4n: '2',
+      fact4l: 'companies founded / co-owned',
+      p1: 'I\'m a lead developer and founder based in <strong>Žilina, Slovakia</strong>. Over the last years I\'ve shipped production systems for government, health insurance, fitness and construction — and a growing family of my own products.',
+      p2: 'I run my own studio <strong>MATROSOFT s.r.o.</strong>, co-own <strong>Dakoty Studio</strong>, and lead development of apps like <strong>GardenYX</strong> and <strong>FitJam</strong>. At <strong>Asseco Central Europe</strong> I work on large-scale mobile and web projects such as VšZP, U+ and Slovak government e-wallet apps.',
+      p3: 'I hold a master\'s degree from the <strong>Faculty of Informatics and Information Technologies, STU Bratislava</strong>. Away from the keyboard: economics, fitness, cars and motorcycles.',
       skillsMobile: 'Mobile',
       skillsFrontend: 'Frontend',
       skillsBackend: 'Backend & data',
@@ -46,6 +59,7 @@ const I18N = {
     exp: {
       label: 'Experience',
       title: 'Where I\'ve worked',
+      sub: 'Product teams, my own studio and long-term client work.',
       e1p: 'Jun 2025 — Present',
       e1r: 'Owner & Lead Developer',
       e1c: 'MATROSOFT s.r.o. · Žilina, Slovakia',
@@ -77,9 +91,17 @@ const I18N = {
     },
 
     projects: {
-      label: 'Projects',
-      title: 'Things I\'ve built',
-      intro: 'A selection of products I own or lead — from AI-powered mobile apps to multi-tenant enterprise systems. Every project has its own detail page.'
+      label: 'Selected work',
+      title: 'Apps and websites in production',
+      intro: 'Products I lead or built from the ground up — for clients and for my own companies. Each one has its own page with my role and the stack.',
+      more: 'More projects',
+      moreSub: 'Products in development and tools I use every day.'
+    },
+
+    stack: {
+      label: 'Stack',
+      title: 'What I build with',
+      sub: 'Native and cross-platform mobile, modern web and the backend behind it — plus AI where it makes sense.'
     },
 
     cards: {
@@ -87,8 +109,6 @@ const I18N = {
       fitjam: 'Global fitness & wellness platform — workouts, nutrition, community and live streaming. Live in production.',
       polier: 'White-label multi-tenant system for construction companies — GPS attendance, site reports, HR, fleet. Built by MATROSOFT.',
       hillconqueror: 'Gamified peak hunting — GPS + photo summit check-ins, trophies and leaderboards. Flutter + NestJS + PostGIS.',
-      dakotyai: 'Multi-model AI chat assistant with voice, image and video input. Flagship product of Dakoty Studio.',
-      casa3d: 'Film your home with a phone, walk through it in the browser — Gaussian Splatting in 3D.',
       acrea: 'AI pipeline generating Slovak building documentation across 10 engineering professions, integrated with ArchiCAD.',
       ea: 'Personal AI chief-of-staff — Telegram, iMessage, mail, calendar, research and real-world bookings.',
       aiagents: 'GDPR-safe AI agent packs for small businesses, running locally at the customer. First pack: CFO in a box.',
@@ -96,21 +116,30 @@ const I18N = {
       nicl: 'CYRIL — the Slovak national integrated travel ticket. One app, one QR code, 39 carriers. React Native mobile + web.',
       epenazenka: 'Receipt-verification app of the Slovak Financial Administration — scan any e-kasa QR receipt and verify it instantly.',
       youplus: 'Fully digital life insurer YOUPLUS — web platforms for four markets: Slovakia, Czechia, Austria and Switzerland.',
-      pgsk: 'Web ecosystem of PARTNERS GROUP SK — one of Slovakia\'s largest financial advisories — and its digital insurer.'
+      pgsk: 'Web ecosystem of PARTNERS GROUP SK — one of Slovakia\'s largest financial advisories — and its digital insurer.',
+      efaktura: 'Certified Slovak Peppol Access Point for e-invoicing — the web is live in production, the React Native mobile app is coming soon.'
     },
 
     contact: {
       label: 'Contact',
-      title: 'Let\'s build something together.',
-      text: 'Have a project in mind, or just want to talk tech? My inbox is always open — I\'ll get back to you as soon as I can.',
-      cta: 'Say hello',
-      ctaCall: 'Call me',
-      location: 'Martin, Slovakia'
+      title: 'Have a project in mind?',
+      text: 'For projects, collaboration or a role, e-mail is the fastest way to reach me.',
+      email: 'Write me an e-mail',
+      call: 'Call me',
+      emailLabel: 'E-mail',
+      phoneLabel: 'Phone',
+      locationLabel: 'Based in',
+      companyLabel: 'Company',
+      location: 'Žilina, Slovakia'
     },
 
     footer: {
+      tagline: 'Lead developer from Žilina, Slovakia. Mobile and web products for healthcare, insurance, transport and the public sector.',
+      work: 'Work',
+      sections: 'Sections',
+      contact: 'Contact',
       rights: 'All rights reserved.',
-      built: 'Designed & built by hand — plain HTML, CSS and JavaScript.'
+      top: 'Back to top'
     },
 
     status: {
@@ -126,6 +155,7 @@ const I18N = {
       since2023: '2023 — Present',
       since2024: '2024 — Present',
       since2025: '2025 — Present',
+      since2026: '2026 — Present',
       in2025: '2025'
     },
 
@@ -213,37 +243,6 @@ const I18N = {
           'Terraform-managed infrastructure on Fly.io + Cloudflare'
         ],
         roleDesc: 'A personal product — I design and build everything myself: the mobile app, the geospatial backend, the workers and the infrastructure.'
-      },
-
-      dakotyai: {
-        tagline: 'One chat, many minds — a multi-model AI assistant with voice, image and video input.',
-        role: 'Co-owner & Lead Developer',
-        ov1: 'Dakoty-AI is the flagship product of Dakoty Studio, which I co-own. It is a Flutter chat assistant that lets users talk to multiple AI models from a single place, with audio, image and video input, and persona-based "occupations" that tune the assistant for a specific task.',
-        ov2: 'The app is built on Riverpod and go_router, with Firebase (Auth, Firestore, Messaging, Crashlytics), Google and Apple sign-in, local persistence via sqflite, and a companion backend.',
-        features: [
-          'Multiple AI models available in one chat',
-          'Voice input and audio playback',
-          'Image and video understanding',
-          'Persona / occupation presets for different tasks',
-          'Google & Apple sign-in, cloud sync',
-          'Local chat history with offline access'
-        ],
-        roleDesc: 'As co-owner of Dakoty Studio I lead product direction and development across the Flutter app and its backend.'
-      },
-
-      casa3d: {
-        tagline: 'Film your home with a phone — then walk through it in the browser as a photorealistic 3D world.',
-        role: 'Creator',
-        ov1: 'Casa3D explores Gaussian Splatting for real-estate and interior use-cases: a phone-camera capture is reconstructed into a photorealistic, walkable 3D scene rendered directly in the browser.',
-        ov2: 'The React + Three.js web app renders .ksplat scenes and simulates the processing pipeline for demos; the real reconstruction runs in a local Python pipeline built on ffmpeg, COLMAP, Nerfstudio and gsplat. A production backend on FastAPI + Celery + S3 is designed and ready to build.',
-        features: [
-          'In-browser Gaussian splat rendering (Three.js)',
-          'Phone video → 3D reconstruction pipeline (COLMAP, Nerfstudio, gsplat)',
-          'Walkable first-person navigation',
-          'Demo mode simulating the full processing pipeline',
-          'Production architecture designed: FastAPI + Celery + S3'
-        ],
-        roleDesc: 'A solo experiment — I built the web app and the reconstruction pipeline end-to-end.'
       },
 
       acrea: {
@@ -363,6 +362,24 @@ const I18N = {
           'Fully digital insurance flows on the IooX platform'
         ],
         roleDesc: 'At Asseco Central Europe I work on frontend development for the web platform and its automated tests.'
+      },
+
+      efaktura: {
+        tagline: 'Slovak e-invoicing over the Peppol network — live on the web, soon in your pocket, ready for mandatory e-invoicing from January 2027.',
+        role: 'Lead Mobile Developer',
+        status: 'Web live · mobile app coming soon',
+        ov1: 'eFaktúra (eInvoice) is the certified Slovak Peppol Access Point of All Soft Corp — the service companies use to send and receive structured e-invoices over the European Peppol network. From 1 January 2027, e-invoicing becomes mandatory for Slovak businesses, so correctness and stability come before new features.',
+        ov2: 'The web portal is live in production. We are now building the mobile app for iOS and Android in React Native, and it has not been released yet. The app has no backend or accounts of its own: users sign in with their eFaktúra account and work against the same API as the web portal. Accounting features planned for later are already in the code behind a central feature-flag registry, ready to be switched on once the platform supports them.',
+        features: [
+          'Sign-in with the eFaktúra account and an e-mail code, plus a PIN and Face ID / fingerprint app lock',
+          'Received e-invoices and credit notes from the Peppol network — detail, PDF and XML',
+          'Issuing invoices: draft, review and send over Peppol; credit notes and copies',
+          'Customers with Slovak business-register lookup and a Peppol network check',
+          'Upload of ready-made e-invoices (XML / ZIP)',
+          'Company profile, switching between companies, team members and invitations',
+          'Push notifications the moment a new invoice arrives'
+        ],
+        roleDesc: 'I own the mobile app end to end — architecture, screens, a typed API client generated from the backend OpenAPI contract, tests and release builds. To deliver push notifications I also extended the platform itself: the Access Point publishes accepted invoices to Kafka, and the Java / Spring Boot backend sends pushes straight through APNs and FCM, with per-company limits and device expiry.'
       }
     }
   },
@@ -375,29 +392,42 @@ const I18N = {
       about: 'O mne',
       experience: 'Skúsenosti',
       projects: 'Projekty',
-      contact: 'Kontakt'
+      contact: 'Kontakt',
+      cta: 'Napíšte mi'
     },
 
     hero: {
-      eyebrow: 'Maroš Lukáč · Lead Developer & zakladateľ',
-      title: 'Tvorím produkty od prvého commitu až po <span class="accent">reálnych používateľov</span>.',
-      subtitle: 'Full-stack a mobilný vývojár zo Slovenska. Navrhujem, staviam a nasadzujem produkčné webové a mobilné systémy od začiatku do konca — Flutter, React Native, React, Kotlin, Swift a TypeScript/Node.',
-      ctaProjects: 'Pozrieť projekty',
-      ctaContact: 'Napíšte mi'
+      badge: 'Lead developer · Žilina',
+      title: 'Mobilné a webové appky od nápadu po produkciu.',
+      sub: 'Som Maroš Lukáč. Navrhujem, staviam a nasadzujem produkty pre zdravotníctvo, poisťovníctvo, dopravu a verejný sektor — aj pre vlastné firmy.',
+      ctaWork: 'Pozrieť projekty',
+      ctaContact: 'Napíšte mi',
+      proof1v: '4+',
+      proof1l: 'roky v produkcii',
+      proof2v: '15+',
+      proof2l: 'dodaných projektov',
+      proof3v: '8',
+      proof3l: 'produktov v prevádzke',
+      chip1v: '39 dopravcov',
+      chip1l: 'Jeden lístok · CYRIL',
+      chip2v: 'VšZP',
+      chip2l: 'Najväčšia zdravotná poisťovňa'
     },
 
     about: {
       label: 'O mne',
-      title: 'Vývojár, zakladateľ,<br>product owner.',
-      p1: 'Som lead developer a zakladateľ z <strong>Martina</strong>. Za posledné roky som dodal produkčné systémy pre štátnu správu, zdravotnú poisťovňu, fitness aj stavebníctvo — a rastúcu rodinu vlastných produktov.',
-      p2: 'Vediem vlastné štúdio <strong>MATROSOFT s.r.o.</strong>, som spolumajiteľom <strong>Dakoty Studio</strong> a vediem vývoj aplikácií ako <strong>GardenYX</strong> či <strong>FitJam</strong>. V <strong>Asseco Central Europe</strong> pracujem na veľkých mobilných a webových projektoch ako VšZP, U+ a mobilné aplikácie štátnej e-peňaženky.',
-      p3: 'Vyštudoval som inžinierske štúdium na <strong>Fakulte informatiky a informačných technológií STU v Bratislave</strong>. Mimo klávesnice: ekonómia, fitness, autá a motorky.',
+      title: 'Vývojár, zakladateľ, product owner.',
       fact1n: '4+',
       fact1l: 'roky profesionálnych skúseností',
       fact2n: '15+',
       fact2l: 'navrhnutých a dodaných projektov',
-      fact3n: '2',
-      fact3l: 'založené / spoluvlastnené firmy',
+      fact3n: '8',
+      fact3l: 'produktov v produkcii',
+      fact4n: '2',
+      fact4l: 'založené / spoluvlastnené firmy',
+      p1: 'Som lead developer a zakladateľ zo <strong>Žiliny</strong>. Za posledné roky som dodal produkčné systémy pre štátnu správu, zdravotnú poisťovňu, fitness aj stavebníctvo — a rastúcu rodinu vlastných produktov.',
+      p2: 'Vediem vlastné štúdio <strong>MATROSOFT s.r.o.</strong>, som spolumajiteľom <strong>Dakoty Studio</strong> a vediem vývoj aplikácií ako <strong>GardenYX</strong> či <strong>FitJam</strong>. V <strong>Asseco Central Europe</strong> pracujem na veľkých mobilných a webových projektoch ako VšZP, U+ a mobilné aplikácie štátnej e-peňaženky.',
+      p3: 'Vyštudoval som inžinierske štúdium na <strong>Fakulte informatiky a informačných technológií STU v Bratislave</strong>. Mimo klávesnice: ekonómia, fitness, autá a motorky.',
       skillsMobile: 'Mobil',
       skillsFrontend: 'Frontend',
       skillsBackend: 'Backend a dáta',
@@ -408,6 +438,7 @@ const I18N = {
     exp: {
       label: 'Skúsenosti',
       title: 'Kde som pracoval',
+      sub: 'Produktové tímy, vlastné štúdio a dlhodobá práca pre klientov.',
       e1p: 'Jún 2025 — súčasnosť',
       e1r: 'Majiteľ & Lead Developer',
       e1c: 'MATROSOFT s.r.o. · Žilina',
@@ -439,9 +470,17 @@ const I18N = {
     },
 
     projects: {
-      label: 'Projekty',
-      title: 'Čo som postavil',
-      intro: 'Výber produktov, ktoré vlastním alebo vediem — od AI mobilných aplikácií po multi-tenant enterprise systémy. Každý projekt má vlastnú detailnú stránku.'
+      label: 'Vybrané projekty',
+      title: 'Appky a weby v produkcii',
+      intro: 'Produkty, ktoré vediem alebo som postavil od základov — pre klientov aj pre vlastné firmy. Každý má vlastnú stránku s mojou rolou a technológiami.',
+      more: 'Ďalšie projekty',
+      moreSub: 'Produkty vo vývoji a nástroje, ktoré denne používam.'
+    },
+
+    stack: {
+      label: 'Technológie',
+      title: 'S čím pracujem',
+      sub: 'Natívny aj multiplatformový mobil, moderný web a backend za ním — a AI tam, kde dáva zmysel.'
     },
 
     cards: {
@@ -449,8 +488,6 @@ const I18N = {
       fitjam: 'Globálna fitness & wellness platforma — tréningy, výživa, komunita a live streaming. Beží v produkcii.',
       polier: 'White-label multi-tenant systém pre stavebné firmy — GPS dochádzka, denné hlásenia, HR, vozový park. Produkt MATROSOFT-u.',
       hillconqueror: 'Gamifikovaný lov vrcholov — GPS + foto check-iny na štítoch, trofeje a rebríčky. Flutter + NestJS + PostGIS.',
-      dakotyai: 'Multimodelový AI chat asistent s hlasovým, obrazovým a video vstupom. Vlajkový produkt Dakoty Studio.',
-      casa3d: 'Natočte si byt telefónom a prejdite sa ním v prehliadači — Gaussian Splatting v 3D.',
       acrea: 'AI pipeline generujúca slovenskú projektovú dokumentáciu pre 10 profesií, integrovaná s ArchiCAD-om.',
       ea: 'Osobný AI asistent — Telegram, iMessage, mail, kalendár, research a skutočné rezervácie.',
       aiagents: 'GDPR-safe balíky AI agentov pre malé firmy, bežiace lokálne u zákazníka. Prvý balík: CFO in a box.',
@@ -458,21 +495,30 @@ const I18N = {
       nicl: 'CYRIL — národný integrovaný cestovný lístok. Jedna appka, jeden QR kód, 39 dopravcov. React Native mobil + web.',
       epenazenka: 'Aplikácia Finančnej správy SR na overovanie pokladničných bločkov — naskenujte QR kód z eKasy a hneď viete, či je pravý.',
       youplus: 'Plne digitálna životná poisťovňa YOUPLUS — webové platformy pre štyri trhy: Slovensko, Česko, Rakúsko a Švajčiarsko.',
-      pgsk: 'Webový ekosystém PARTNERS GROUP SK — jednej z najväčších finančných skupín na Slovensku — a jej digitálnej poisťovne.'
+      pgsk: 'Webový ekosystém PARTNERS GROUP SK — jednej z najväčších finančných skupín na Slovensku — a jej digitálnej poisťovne.',
+      efaktura: 'Certifikovaný slovenský Peppol Access Point pre e-fakturáciu — web je v produkcii, mobilná appka v React Native čoskoro vyjde.'
     },
 
     contact: {
       label: 'Kontakt',
-      title: 'Poďme spolu niečo postaviť.',
-      text: 'Máte projekt, alebo sa chcete len porozprávať o technológiách? Moja schránka je vždy otvorená — ozvem sa hneď, ako to bude možné.',
-      cta: 'Napíšte mi',
-      ctaCall: 'Zavolajte mi',
-      location: 'Martin, Slovensko'
+      title: 'Máte projekt na mysli?',
+      text: 'Pre projekty, spoluprácu alebo pracovnú ponuku ma najrýchlejšie zastihnete e-mailom.',
+      email: 'Napíšte mi e-mail',
+      call: 'Zavolajte mi',
+      emailLabel: 'E-mail',
+      phoneLabel: 'Telefón',
+      locationLabel: 'Lokalita',
+      companyLabel: 'Firma',
+      location: 'Žilina, Slovensko'
     },
 
     footer: {
+      tagline: 'Lead developer zo Žiliny. Mobilné a webové produkty pre zdravotníctvo, poisťovníctvo, dopravu a verejný sektor.',
+      work: 'Projekty',
+      sections: 'Sekcie',
+      contact: 'Kontakt',
       rights: 'Všetky práva vyhradené.',
-      built: 'Navrhnuté a postavené ručne — čisté HTML, CSS a JavaScript.'
+      top: 'Späť hore'
     },
 
     status: {
@@ -488,6 +534,7 @@ const I18N = {
       since2023: '2023 — súčasnosť',
       since2024: '2024 — súčasnosť',
       since2025: '2025 — súčasnosť',
+      since2026: '2026 — súčasnosť',
       in2025: '2025'
     },
 
@@ -575,37 +622,6 @@ const I18N = {
           'Infraštruktúra cez Terraform na Fly.io + Cloudflare'
         ],
         roleDesc: 'Osobný produkt — všetko navrhujem a staviam sám: mobilnú aplikáciu, geopriestorový backend, workery aj infraštruktúru.'
-      },
-
-      dakotyai: {
-        tagline: 'Jeden chat, veľa myslí — multimodelový AI asistent s hlasovým, obrazovým a video vstupom.',
-        role: 'Spolumajiteľ & Lead Developer',
-        ov1: 'Dakoty-AI je vlajkový produkt Dakoty Studio, ktorého som spolumajiteľom. Je to Flutter chat asistent, v ktorom sa používatelia rozprávajú s viacerými AI modelmi z jedného miesta — s audio, obrazovým a video vstupom a s "povolaniami", ktoré asistenta naladia na konkrétnu úlohu.',
-        ov2: 'Aplikácia stojí na Riverpode a go_routri, s Firebase (Auth, Firestore, Messaging, Crashlytics), prihlásením cez Google a Apple, lokálnou perzistenciou cez sqflite a vlastným backendom.',
-        features: [
-          'Viacero AI modelov v jednom chate',
-          'Hlasový vstup a prehrávanie audia',
-          'Porozumenie obrázkom a videu',
-          'Predvoľby persón / povolaní pre rôzne úlohy',
-          'Prihlásenie cez Google a Apple, synchronizácia do cloudu',
-          'Lokálna história chatov s offline prístupom'
-        ],
-        roleDesc: 'Ako spolumajiteľ Dakoty Studio vediem produktové smerovanie aj vývoj — Flutter aplikáciu aj jej backend.'
-      },
-
-      casa3d: {
-        tagline: 'Natočte si domov telefónom — a prejdite sa ním v prehliadači ako fotorealistickým 3D svetom.',
-        role: 'Autor',
-        ov1: 'Casa3D skúma Gaussian Splatting pre realitné a interiérové využitie: záznam z telefónu sa zrekonštruuje do fotorealistickej, prechodnej 3D scény vykreslenej priamo v prehliadači.',
-        ov2: 'React + Three.js webová aplikácia vykresľuje .ksplat scény a pre demá simuluje spracovateľskú pipeline; skutočná rekonštrukcia beží v lokálnej Python pipeline postavenej na ffmpeg, COLMAP, Nerfstudio a gsplat. Produkčný backend na FastAPI + Celery + S3 je navrhnutý a pripravený na stavbu.',
-        features: [
-          'Vykresľovanie Gaussian splatov v prehliadači (Three.js)',
-          'Pipeline video z telefónu → 3D (COLMAP, Nerfstudio, gsplat)',
-          'Prechádzanie scénou z pohľadu prvej osoby',
-          'Demo režim simulujúci celú pipeline',
-          'Navrhnutá produkčná architektúra: FastAPI + Celery + S3'
-        ],
-        roleDesc: 'Sólo experiment — webovú aplikáciu aj rekonštrukčnú pipeline som postavil od začiatku do konca.'
       },
 
       acrea: {
@@ -725,6 +741,24 @@ const I18N = {
           'Plne digitálne poistné procesy na platforme IooX'
         ],
         roleDesc: 'V Asseco Central Europe pracujem na frontend vývoji webovej platformy a jej automatizovaných testoch.'
+      },
+
+      efaktura: {
+        tagline: 'Slovenská e-fakturácia cez sieť Peppol — na webe už v produkcii, čoskoro aj vo vrecku, pripravená na povinnú e-fakturáciu od januára 2027.',
+        role: 'Lead Mobile Developer',
+        status: 'Web v produkcii · mobilná appka čoskoro',
+        ov1: 'eFaktúra (eInvoice) je certifikovaný slovenský Peppol Access Point spoločnosti All Soft Corp — služba, cez ktorú firmy posielajú a prijímajú štruktúrované e-faktúry v európskej sieti Peppol. Od 1. januára 2027 je e-fakturácia pre slovenské firmy povinná, preto majú správnosť a stabilita prednosť pred novinkami.',
+        ov2: 'Webový portál je v produkcii. Teraz staviame mobilnú appku pre iOS a Android v React Native, ktorá ešte len vyjde. Appka nemá vlastný backend ani účty: používateľ sa prihlási účtom eFaktúry a pracuje s tým istým API ako webový portál. Účtovné funkcie plánované na neskôr sú už v kóde za centrálnym registrom prepínačov a zapnú sa, keď ich platforma bude podporovať.',
+        features: [
+          'Prihlásenie účtom eFaktúry s kódom z e-mailu, zámok appky PIN-om, Face ID alebo odtlačkom',
+          'Prijaté e-faktúry a dobropisy zo siete Peppol — detail, PDF a XML',
+          'Vystavovanie faktúr: koncept, kontrola a odoslanie cez Peppol, dobropisy a kópie',
+          'Zákazníci s vyhľadaním v registroch firiem a overením v sieti Peppol',
+          'Nahratie hotových e-faktúr (XML / ZIP)',
+          'Profil firmy, prepínanie medzi firmami, členovia tímu a pozvánky',
+          'Push notifikácia hneď, ako príde nová faktúra'
+        ],
+        roleDesc: 'Mobilnú appku mám na starosti celú — architektúru, obrazovky, typový API klient generovaný z OpenAPI kontraktu backendu, testy aj release buildy. Kvôli push notifikáciám som rozšíril aj samotnú platformu: Access Point publikuje prijaté faktúry do Kafky a backend v Jave / Spring Boot posiela pushe priamo cez APNs a FCM, s limitmi na firmu a expiráciou zariadení.'
       }
     }
   }

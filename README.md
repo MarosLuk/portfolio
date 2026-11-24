@@ -17,18 +17,29 @@ assets/img/             Images, screenshots (add per project over time)
 
 - **EN / SK language toggle** — English is default; choice persists in `localStorage`
 - **Light / dark theme** — follows system preference, manual toggle persists
-- **Animations** — scroll reveal (IntersectionObserver), staggered cards, cursor-follow glow on project cards; respects `prefers-reduced-motion`
+- **Animations** — quiet scroll reveal (IntersectionObserver, each element on its own); respects `prefers-reduced-motion`
 - **Responsive** — 375px → 1440px+
 
 ## Design system
 
+Layout and components follow the FitJam website (fitjam.app): fixed glass nav with a
+language pill and a CTA, two-column hero with a phone mockup and floating stat chips,
+centred section headings (eyebrow · title · sub), rounded cards with soft shadows,
+a tech chip cloud, a timeline, stat cards and a dark contact card. One font family;
+weight and tracking carry the hierarchy. Colours stay paper, ink and warm greys.
+
 | Token | Value |
 |-------|-------|
-| Headings | Archivo |
-| Body | Space Grotesk |
-| Background | `#FAFAFA` / dark `#0A0A0B` |
-| Text | `#09090B` / dark `#FAFAFA` |
-| Accent | `#2563EB` (blue) |
+| Font | Outfit (400–700) |
+| Background | `#F6F5F1` / dark `#111111` |
+| Cards | `#FDFCFA` / dark `#1A1A1A` |
+| Text | `#151515` / dark `#ECEBE6` |
+| Lines | `#DCD9D1` / dark `#292928` |
+| Primary buttons, contact card | ink `#151515` (light text) |
+| Live status dot | `#2E7D4F` / dark `#6CBF8C` |
+
+All tokens live at the top of `assets/css/style.css`. Fonts load from Google Fonts in each page's `<head>`.
+When you change CSS or JS, bump the `?v=` number on the `<link>`/`<script>` tags in every page.
 
 ## Run locally
 
@@ -44,7 +55,7 @@ python3 -m http.server 8000
 
 1. Copy an existing page in `projects/` and rename it (e.g. `projects/my-app.html`).
 2. Add the project's EN + SK texts in `assets/js/i18n.js` under `cards.<slug>` and `p.<slug>`.
-3. Add a project card to the grid in `index.html`.
+3. Add it to `index.html` — an `a.work-card` in "Selected work" (with screenshots) or an `a.feature-card` in "More projects" — and fix the prev/next links in the neighbouring pages.
 
 ## Screenshots & production links
 
@@ -55,3 +66,9 @@ python3 -m http.server 8000
   (`.link-list`) on each detail page.
 - Mobile app screenshots were pulled from the official App Store / Google Play listings;
   web project images are viewport screenshots of the live production sites.
+- Homepage: projects with screenshots are cards in "Selected work" (`.work-grid`, `a.work-card`).
+  Mobile apps show three thumbnails `assets/img/<slug>/card-1..3.webp` (360 px wide);
+  websites show one `card-1.webp` (1100 px wide) in a frame (`.work-card__frame`).
+  Projects without screenshots are cards in "More projects" (`.feature-grid`, `a.feature-card`).
+  The hero phone shows `assets/img/nicl/hero.webp` (a real app screen, 600 px wide). Make thumbnails with:
+  `magick shot-1.webp -resize 360x -strip -quality 82 card-1.webp`

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HillConqueror — Maroš Lukáč</title>
   <meta name="description" content="HillConqueror — project by Maroš Lukáč, lead developer & founder.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563EB'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='800' fill='white' text-anchor='middle'%3EML%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23151515'/%3E%3Ctext x='32' y='41' font-family='Arial,sans-serif' font-size='24' font-weight='700' fill='%23F6F5F1' text-anchor='middle'%3EML%3C/text%3E%3C/svg%3E">
   <script>
     (function () {
       try {
@@ -17,22 +17,23 @@
       } catch (e) {}
     })();
   </script>
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../assets/css/style.css?v=8">
 </head>
 <body>
 
   <!-- ================= NAV ================= -->
   <header class="nav">
     <div class="nav__inner">
-      <a href="../index.html" class="nav__logo">Maroš<span>.</span>Lukáč</a>
-
+      <a href="../index.html" class="nav__logo"><span class="nav__mark">ML</span><span>Maroš Lukáč</span></a>
       <ul class="nav__links">
-        <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a href="../index.html#projects" data-i18n="nav.projects">Work</a></li>
         <li><a href="../index.html#experience" data-i18n="nav.experience">Experience</a></li>
-        <li><a href="../index.html#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
         <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
-
       <div class="nav__controls">
         <div class="lang-toggle" role="group" aria-label="Language">
           <button type="button" data-lang="en" class="active">EN</button>
@@ -42,8 +43,9 @@
           <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
           <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
         </button>
+        <a href="../index.html#contact" class="btn btn--primary btn--sm nav__cta" data-i18n="nav.cta">Get in touch</a>
         <button type="button" class="nav__burger" aria-label="Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="7" y2="7"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="17" y2="17"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="8" y2="8"/><line x1="4" x2="20" y1="16" y2="16"/></svg>
         </button>
       </div>
     </div>
@@ -128,13 +130,13 @@
         </div>
 
         <div class="project-nav">
-          <a href="pgsk.html" class="btn btn--ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform:rotate(180deg)"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>PGSK · Partners Group</span>
+          <a href="polier.html" class="pnav">
+            <span class="pnav__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></span>
+            <span><span class="pnav__label" data-i18n="proj.prev">Previous project</span><span class="pnav__title">Polier</span></span>
           </a>
-          <a href="dakoty-ai.html" class="btn btn--ghost">
-            <span>Dakoty-AI</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          <a href="acrea.html" class="pnav pnav--next">
+            <span><span class="pnav__label" data-i18n="proj.next">Next project</span><span class="pnav__title">Acrea</span></span>
+            <span class="pnav__arrow"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
           </a>
         </div>
       </div>
@@ -144,13 +146,42 @@
 
   <!-- ================= FOOTER ================= -->
   <footer class="footer">
-    <div class="container footer__inner">
-      <span>© <span data-year>2026</span> Maroš Lukáč. <span data-i18n="footer.rights">All rights reserved.</span></span>
-      <span data-i18n="footer.built">Designed &amp; built by hand — plain HTML, CSS and JavaScript.</span>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="nav__logo"><span class="nav__mark">ML</span><span>Maroš Lukáč</span></a>
+          <p data-i18n="footer.tagline"></p>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.work">Work</h4>
+          <ul><li><a href="vszp.html">VšZP</a></li><li><a href="nicl.html">CYRIL · NICL</a></li><li><a href="efaktura.html">eFaktúra</a></li><li><a href="youplus.html">U+ · YOUPLUS</a></li><li><a href="fitjam.html">FitJam</a></li><li><a href="gardenyx.html">GardenYX</a></li></ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.sections">Sections</h4>
+          <ul>
+            <li><a href="../index.html#projects" data-i18n="nav.projects">Work</a></li>
+            <li><a href="../index.html#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="../index.html#about" data-i18n="nav.about">About</a></li>
+            <li><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <ul>
+            <li><a href="mailto:maros.lukac2000@gmail.com">maros.lukac2000@gmail.com</a></li>
+            <li><a href="tel:+421917519030">+421 917 519 030</a></li>
+            <li data-i18n="contact.location">Žilina, Slovakia</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Maroš Lukáč. <span data-i18n="footer.rights">All rights reserved.</span></span>
+        <a href="#" data-i18n="footer.top">Back to top</a>
+      </div>
     </div>
   </footer>
 
-  <script src="../assets/js/i18n.js"></script>
-  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/i18n.js?v=6"></script>
+  <script src="../assets/js/main.js?v=6"></script>
 </body>
 </html>
